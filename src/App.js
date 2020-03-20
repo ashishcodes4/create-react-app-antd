@@ -1,16 +1,30 @@
-import React from 'react';
-import { Form, Select, InputNumber, DatePicker, Switch, Slider, Button, Typography } from 'antd';
-import './App.css';
+import React from "react";
+import {
+  Form,
+  Select,
+  InputNumber,
+  DatePicker,
+  Switch,
+  Slider,
+  Button,
+  Typography
+} from "antd";
+import "./App.css";
 
 const { Option } = Select;
 const { Title } = Typography;
 
 const App = () => (
   <>
-    <section style={{ textAlign: 'center', marginTop: 48, marginBottom: 60 }}>
+    <section style={{ textAlign: "center", marginTop: 48, marginBottom: 60 }}>
       <Title level={2}>
         <img
-          style={{width: 40, height: 40, marginRight: 12, verticalAlign: 'bottom' }}
+          style={{
+            width: 40,
+            height: 40,
+            marginRight: 12,
+            verticalAlign: "bottom"
+          }}
           src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
           alt="Ant Design"
         />
@@ -33,7 +47,9 @@ const App = () => (
         <Select defaultValue="lucy" style={{ width: 192 }}>
           <Option value="jack">jack</Option>
           <Option value="lucy">lucy</Option>
-          <Option value="disabled" disabled>disabled</Option>
+          <Option value="disabled" disabled>
+            disabled
+          </Option>
           <Option value="yiminghe">yiminghe</Option>
         </Select>
       </Form.Item>
@@ -45,9 +61,7 @@ const App = () => (
         <Button type="primary" htmlType="submit">
           Submit
         </Button>
-        <Button style={{ marginLeft: 8 }}>
-          Cancel
-        </Button>
+        <Button style={{ marginLeft: 8 }}>Cancel</Button>
       </Form.Item>
     </Form>
   </>
